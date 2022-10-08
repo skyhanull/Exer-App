@@ -1,4 +1,5 @@
 .SubInfo{
     background-color: beige;
     width: 70%;
+    overflow-y: scroll;
 }
