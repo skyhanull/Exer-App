@@ -1,0 +1,6 @@
+.Listcard{
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
