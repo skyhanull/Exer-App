@@ -3,21 +3,26 @@ import Sidebar from './Pages/Sidebar'
 // import SubInfo from './Pages/SubInfo';
 import Main from './Pages/Main';
 import './App.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 
 function App() {
   return (
-     
+    <BrowserRouter>
     <div>
    
    <Sidebar />
       <section>
-        
-        <Main />
-      </section>
+        <Routes>
+          <Route path='/' element={<Main/>}></Route>
+          <Route path='about' element ></Route>
+        </Routes>
       
+      </section>
+     
   
     </div>
+    </BrowserRouter>
   );
 }
 

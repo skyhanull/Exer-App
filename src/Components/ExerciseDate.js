@@ -15,7 +15,7 @@ const ExerciseDate=(props)=>{
     return(
         <div className="expense-date">
             <div className="expense-date__year">{year}</div>
-        <div className="expense-date__month">{month}/{day}</div>
+            <div className="expense-date__month">{month}/{day}</div>
        
       
       </div>

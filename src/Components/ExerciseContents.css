@@ -6,12 +6,20 @@
     flex-direction: row;
     border-radius: 10px;
     left: 20px;
+    
    
 
     
     
 }
 
-.buttonclass{
-    left: 0px;
+
+
+.buttonclass1{
+    background-color: blue;
+}
+
+.kcalcontent{
+    background-color: red;
+    width: 600px
 }

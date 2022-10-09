@@ -16,11 +16,15 @@ console.log(props.list.info)
    
    
      <ExerciseDate  list = {props.list}/> 
-    <div>{list.info.time} - {list.info.lasttime}</div>  
-    <div>{list.info.kcal}</div>
+    {/* <div>{list.info.time} - {list.info.lasttime}</div>   */}
+
+    <div className='kcalcontent'>
+        {list.info.kcal}
+        {list.info.time} - {list.info.lasttime}
+        </div>
    
     <div>
-    <button className='buttonclass' type='button' onClick={()=>onRemove(list.id)}>delete</button> 
+    <button className='buttonclass1' type='button' onClick={()=>onRemove(list.id)}>delete</button> 
  
     </div>
     </div>
