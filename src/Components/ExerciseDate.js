@@ -1,14 +1,15 @@
 
 import React from 'react';
+import './ExerciseDate.css'
 
 
-const ExerciseDate=({Info})=>{
+const ExerciseDate=(props)=>{
 
 
    
-    const month = Info.date.toLocaleString('en-GB',{month: 'numeric'} );
-    const day = Info.date.toLocaleString('en-GB', { day: '2-digit' });
-    const year = Info.date.getFullYear()
+    const month = props.list.info.date.toLocaleString('en-GB',{month: 'numeric'} );
+    const day = props.list.info.date.toLocaleString('en-GB', { day: '2-digit' });
+    const year = props.list.info.date.getFullYear()
 
     console.log(month)
     return(

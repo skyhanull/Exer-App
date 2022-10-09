@@ -1,10 +1,10 @@
 
 // import styled from "styled-components"
  import MainInfo from "./MainInfo"
-// import SubInfo from "./SubInfo"
+import SubInfo from "./SubInfo"
 import { useState } from "react"
 import './Main.css'
-import ExerciseContents from "../Components/ExerciseContents"
+// import ExerciseContents from "../Components/ExerciseContents"
 
 
 const Main=()=>{
@@ -34,12 +34,7 @@ const onRemove =(id)=>{
  return(
         <div className="divideform">
         <MainInfo addDataInfo={addDataInfo}/>
-        <ul>
-        {userlist.map((userlist)=>{
-          return(
-           <ExerciseContents list={userlist} onRemove={onRemove} key={userlist.id}/>)
-        })}
-       </ul>
+       <SubInfo list={userlist} onRemove={onRemove}/>
         </div>
     )
 }

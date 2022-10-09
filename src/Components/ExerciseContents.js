@@ -1,5 +1,5 @@
 
-// import ExerciseDate from './ExerciseDate';
+import ExerciseDate from './ExerciseDate';
 // import styled from 'styled-components';
 import '../App.css';
 import './ExerciseContents.css'
@@ -8,20 +8,21 @@ import './ExerciseContents.css'
 const ExerciseContents=(props)=>{
 
 const { list ,onRemove } = props
-
+console.log(props.list.info)
     return(
     <div className='Listcard'>
     
     
    
-    <ul>
-    <li>
-    <div>dkdk4</div>
-    <div>{list.info.time}</div>  
+   
+     <ExerciseDate  list = {props.list}/> 
+    <div>{list.info.time} - {list.info.lasttime}</div>  
     <div>{list.info.kcal}</div>
-    </li>
-    <button type='button' onClick={()=>onRemove(list.id)}>delete</button> 
-   </ul>
+   
+    <div>
+    <button className='buttonclass' type='button' onClick={()=>onRemove(list.id)}>delete</button> 
+ 
+    </div>
     </div>
     )
 

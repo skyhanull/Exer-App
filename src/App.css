@@ -40,35 +40,13 @@
 * {
   font-family: 'NanumBarunGothic';
   padding: 0px;
-  margin:10px;
+  margin: 10px;
   list-style: none;
   text-decoration: none;
   -ms-overflow-style: none;
   scrollbar-width: none;
   box-sizing: border-box;
-  /* display: flex;
-  flex-direction: column; */
- 
-
-  
 }
 
-/* html, body {
-  width: 100%;
-  height: 100%;
-  overflow: scroll;
-} */
-/* 
-section{
-  display: block;
-  justify-content: center;
-  flex-direction: row;
-}  */
-
-/* .sectiondivide{
-
-  display: flex;
-  flex-direction: row;
-} */
 
 

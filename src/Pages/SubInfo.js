@@ -2,15 +2,22 @@ import ExerciseContents from '../Components/ExerciseContents';
 import '../App.css';
 import './SubInfo.css'
 
-const SubInfo=(props)=>{
+const SubInfo=({list, onRemove})=>{
 
    
 
 
     return(
     <div className='SubInfo'>
-        
-        <ExerciseContents list={props.list} onRemove={props.onRemove} />
+        {list.map((list)=>{
+            return(
+             <ExerciseContents 
+             key={list.id}
+             list={list} 
+             onRemove={onRemove} />
+            )
+        })}
+
         
     </div>
     )

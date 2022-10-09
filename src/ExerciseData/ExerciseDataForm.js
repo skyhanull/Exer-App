@@ -103,7 +103,7 @@ const submitHandler = (event) => {
         </div>
         <div className="Exercise-actions">
          
-          <button type='submit'>Add</button>
+          <button className='buttonclass' type='submit'>Add</button>
         </div>
     </div>  
      </form>

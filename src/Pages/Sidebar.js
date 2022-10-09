@@ -1,6 +1,7 @@
 
 // import styled from 'styled-components';
 import '../App.css';
+import './Sidebar.css'
 
 
 
@@ -8,12 +9,12 @@ import '../App.css';
 const Sidebar=()=>{
 
     return(
-        <>
+        <div className='Sidebar'>
            
             <div>heli</div>
             
           
-        </>
+        </div>
 
 
 )

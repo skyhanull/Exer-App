@@ -1,3 +1,9 @@
 .DataForm{
-    background-color: blueviolet;
+    background-color: rgb(196, 196, 196);
+    border-radius: 10px;
+}
+
+.Exercise-inputForm{
+    display: flex;
+    justify-content: center;
 }

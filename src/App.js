@@ -10,9 +10,9 @@ function App() {
      
     <div>
    
-      
+   <Sidebar />
       <section>
-        <Sidebar />
+        
         <Main />
       </section>
       
