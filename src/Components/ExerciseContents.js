@@ -3,6 +3,7 @@ import ExerciseDate from './ExerciseDate';
 // import styled from 'styled-components';
 import '../App.css';
 import './ExerciseContents.css'
+import { TiDelete } from 'react-icons/ti';
 
 
 const ExerciseContents=(props)=>{
@@ -19,12 +20,19 @@ console.log(props.list.info)
     {/* <div>{list.info.time} - {list.info.lasttime}</div>   */}
 
     <div className='kcalcontent'>
-        {list.info.kcal}
-        {list.info.time} - {list.info.lasttime}
+        {/* <div className='content-box'> */}
+        <div className='timecontainer'>{list.info.time} - {list.info.lasttime}</div>
+        <div>{list.info.text}</div>
+        
+       
+        
         </div>
    
     <div>
-    <button className='buttonclass1' type='button' onClick={()=>onRemove(list.id)}>delete</button> 
+    <button className='buttonclass1' type='button' onClick={()=>onRemove(list.id)}>
+        <TiDelete size="30px" />
+    
+        </button> 
  
     </div>
     </div>

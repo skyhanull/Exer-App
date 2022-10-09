@@ -5,16 +5,18 @@ import { Link } from 'react-router-dom';
 
 
 export const Nav = styled.div`
-  background: #000;
+  background: #9EA8C2
+;
   height: 80px;
   /* margin-top: -80px; */
+  margin: 0px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1rem;
   position: sticky;
   top: 0;
-  z-index: 10;
+  z-index: 10; 
 
   @media screen and(max-width: 960px) {
     transition: 0.8s all ease;

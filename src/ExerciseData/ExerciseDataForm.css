@@ -1,10 +1,14 @@
 .DataForm{
-    background-color: rgb(196, 196, 196);
+    background-color: #F4F9FF;
     border-radius: 10px;
 }
 
 .Exercise-inputForm{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
+input{
+    
+    height: 30px;
+}

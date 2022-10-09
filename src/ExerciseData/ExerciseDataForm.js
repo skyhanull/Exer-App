@@ -3,6 +3,8 @@ import { useState } from 'react';
 import '../App.css';
 import Modal from './Modal';
 import './ExerciseDataForm.css'
+import { BsFillCalendarCheckFill} from "react-icons/bs";
+import { BiTimeFive  } from "react-icons/bi";
 
 
 const ExerciseDataForm=(props)=>{
@@ -10,7 +12,7 @@ const ExerciseDataForm=(props)=>{
 const[enterdDate,setEnterdDate]=useState("")
 const[enterdTime,setEnterdTime]=useState("")
 const[lastTime,setLastTime]=useState("")
-const[enterdKcal,setEnterdKcal]=useState("")
+const[enterdtext,setEnterdText]=useState("")
 const[error,setError] = useState()
 
 
@@ -28,34 +30,34 @@ const LastHandler=(e)=>{
     
 }
 const KcalHandler=(e)=>{
-    setEnterdKcal(e.target.value)
+    setEnterdText(e.target.value)
 }
 
 
 const submitHandler = (event) => {
     event.preventDefault();
 
-    if(+enterdKcal < 1){
-        setError({
-            title: "Error message",
-            message :" 칼로리가 작성되지 않았습니다 칼로리를 작성해주세요" 
-        })
-        return
-    }
-        
+
+   if(enterdtext.trim().length === 0 || Object.keys(enterdDate).length === 0){
+    setError({
+        title: 'invaild input',
+        message: '내용을 입력해주세요'
+       })
+        return;
+   }
     const exData = {
       
       date: new Date(enterdDate),
       time: enterdTime,
       lasttime: lastTime,
-      kcal: enterdKcal
+      text: enterdtext
     };
 
     props.onSaveExerciseData(exData)
     setEnterdDate('');
     setEnterdTime('');
     setLastTime('')
-    setEnterdKcal('');
+    setEnterdText('');
 
 }
 
@@ -65,12 +67,12 @@ const submitHandler = (event) => {
   }
 
     return(
-        <div className='DataForm'>
+    <div className='DataForm'>
     {error && <Modal onconfirm={ErrorHandler} message={error.message} title={error.title} /> }
     <form onSubmit={submitHandler}>
      <div className='Exercise-DataForm'>
         <div className='Exercise-inputForm'>
-        <label>Date</label>
+        <label><BsFillCalendarCheckFill /></label>
 
         <input type="Date"
         min='2017-01-01'
@@ -81,7 +83,7 @@ const submitHandler = (event) => {
         </div>
 
         <div className='Exercise-inputForm'>
-        <label>Time</label>
+        <label><BiTimeFive size='20px'/></label>
 
         <input type="time"
         
@@ -95,10 +97,11 @@ const submitHandler = (event) => {
         ></input>
         </div>
         <div className='Exercise-inputForm'>
-        <label>Kcal</label>
-        <input type="number"
-        value={enterdKcal}
+        <label>text</label>
+        <input type="text"
+        value={enterdtext}
         onChange={KcalHandler}
+        placeholder="내용을 입력해주세요"
         ></input>
         </div>
         <div className="Exercise-actions">

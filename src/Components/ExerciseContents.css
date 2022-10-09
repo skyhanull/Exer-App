@@ -6,20 +6,34 @@
     flex-direction: row;
     border-radius: 10px;
     left: 20px;
-    
-   
-
-    
-    
-}
+   }
 
 
 
 .buttonclass1{
-    background-color: blue;
+   background-color: rgba(0,0,0,0);
+    color: rgb(0, 0, 0);
+    border-color: transparent;
+     border: none;
+     margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    
 }
 
 .kcalcontent{
+    border-radius: 10px;
     background-color: red;
-    width: 600px
+    width: 660px
+}
+
+.content-box{
+    overflow-y: scroll;
+}
+
+.timecontainer{
+    background-color: aquamarine;
+    margin: 0px;
 }

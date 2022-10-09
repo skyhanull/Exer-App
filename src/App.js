@@ -4,18 +4,20 @@ import Sidebar from './Pages/Sidebar'
 import Main from './Pages/Main';
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import About from './Pages/About'
 
 
 function App() {
   return (
     <BrowserRouter>
+    <Sidebar />
     <div>
    
-   <Sidebar />
+ 
       <section>
         <Routes>
           <Route path='/' element={<Main/>}></Route>
-          <Route path='about' element ></Route>
+          <Route path='about' element={<About />} ></Route>
         </Routes>
       
       </section>
