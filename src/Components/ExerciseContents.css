@@ -1,9 +1,20 @@
+.listback{
+    background-color:white;
+    margin:0px;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+
 .Listcard{
     margin: 30px 10px 0px 40px;
-    width: 90%;
-    background-color: rgb(197, 251, 255);
+    width: 80%;
+    background-color: #53424C;
     display: flex;
     flex-direction: row;
+    justify-content: center;
     border-radius: 10px;
     left: 20px;
    }
@@ -11,22 +22,22 @@
 
 
 .buttonclass1{
-   background-color: rgba(0,0,0,0);
-    color: rgb(0, 0, 0);
+   background-color:#53424C ;
+    color: rgb(255, 235, 235);
     border-color: transparent;
      border: none;
-     margin: 0px;
+     
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
     
 }
 
 .kcalcontent{
     border-radius: 10px;
-    background-color: red;
-    width: 660px
+    background-color:rgb(255, 235, 235);
+    width: 660px;
+    
 }
 
 .content-box{
@@ -34,6 +45,24 @@
 }
 
 .timecontainer{
-    background-color: aquamarine;
+    background-color: #BAA6B1;
     margin: 0px;
+    border-radius: 10px;
+    height: 20%;
+    
+    display: flex;
+    align-items: flex-end;
+  
+    justify-content: flex-end;
+    font-weight: 500;
+}
+
+.textcontent-op{
+    background-color:rgb(255, 235, 235);
+}
+
+textarea{
+    width: 90%;
+    height: 90%;
+    align-items: center;
 }

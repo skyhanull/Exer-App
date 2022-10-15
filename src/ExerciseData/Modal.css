@@ -11,7 +11,7 @@
   }
 
   .modalerror-title{
-    background-color: bisque;
+    background-color:rgb(255, 235, 235);
     margin: 0px;
     display: flex;
     align-items: center;
@@ -38,6 +38,7 @@
     align-items: center;
     justify-content: center;
     height: 14%;
+    color: wheat;
     
   }
 

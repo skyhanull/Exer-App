@@ -2,6 +2,7 @@
 
 
 import '../App.css';
+import './ExerciseInform.css'
 import ExerciseDataForm from './ExerciseDataForm';
 
 
@@ -18,11 +19,11 @@ const ExerciseInform=(props)=>{
 
   }
     return(
-    <>
+    <div className='Datacontent'>
    
       <ExerciseDataForm onSaveExerciseData={onSaveExerciseDataHandler}/>
   
-    </>
+    </div>
     )
 
 }

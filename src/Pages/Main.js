@@ -28,13 +28,16 @@ const addDataInfo =(info)=>{
 const onRemove =(id)=>{
     setUserlist([...userlist].filter((list) => list.id !== id ))
 }
-   
 
+const onEdit = (id, newcontent) =>{
+  setUserlist(userlist.map((list)=> list.id === id ? {...list, text : newcontent}: list))
+}
+console.log(userlist)
 
  return(
         <div className="divideform">
         <MainInfo addDataInfo={addDataInfo}/>
-       <SubInfo list={userlist} onRemove={onRemove}/>
+       <SubInfo list={userlist} onRemove={onRemove} onEdit={onEdit}/>
         </div>
     )
 }

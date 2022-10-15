@@ -2,10 +2,10 @@ import ExerciseContents from '../Components/ExerciseContents';
 import '../App.css';
 import './SubInfo.css'
 
-const SubInfo=({list, onRemove})=>{
+const SubInfo=({list, onRemove , onEdit})=>{
 
-   
-
+  
+console.log(list)
 
     return(
     <div className='SubInfo'>
@@ -14,7 +14,10 @@ const SubInfo=({list, onRemove})=>{
              <ExerciseContents 
              key={list.id}
              list={list} 
-             onRemove={onRemove} />
+             onRemove={onRemove}
+             onEdit={onEdit}
+             text={list.text}
+              />
             )
         })}
 

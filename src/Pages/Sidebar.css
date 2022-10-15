@@ -8,20 +8,29 @@
     width: 100%;
     padding: 0 24px;
     max-width: 1100px;
+    background-color:#615959 ;
 }
 
 .Logo{
-    color: red;
+    color: #FFDEF1;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-left: 24px;
     font-weight: bold;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 50px;
+    
 }
 
 a{
     text-decoration: none;
-    color: rgb(255, 0, 0);
+    color: #FFDEF1;
+}
+
+.Nav-menu{
+    background-color:#615959 ;
+    margin: 0px;
+    font-size: 30px;
+    font-weight: 300;
 }

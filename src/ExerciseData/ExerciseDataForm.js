@@ -96,12 +96,13 @@ const submitHandler = (event) => {
         onChange={LastHandler}
         ></input>
         </div>
-        <div className='Exercise-inputForm'>
+        <div className='Exercise-inputForm inputtext'>
         <label>text</label>
         <input type="text"
         value={enterdtext}
         onChange={KcalHandler}
         placeholder="내용을 입력해주세요"
+        
         ></input>
         </div>
         <div className="Exercise-actions">

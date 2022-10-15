@@ -8,6 +8,12 @@ import About from './Pages/About'
 
 
 function App() {
+  
+// #C0C3CC
+// #3392FA
+// #F6F9FF
+// #9EA8C2 색상표
+
   return (
     <BrowserRouter>
     <Sidebar />

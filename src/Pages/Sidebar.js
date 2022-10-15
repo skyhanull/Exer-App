@@ -5,8 +5,9 @@ import { Link } from 'react-router-dom';
 
 
 export const Nav = styled.div`
-  background: #9EA8C2
+ background-color:#615959 ;
 ;
+width: 100%;
   height: 80px;
   /* margin-top: -80px; */
   margin: 0px;
@@ -44,7 +45,7 @@ const Sidebar=()=>{
            <Nav>
             <div className='navcontainer'>
             <div className='Logo'>
-            <Link to ="/">Logo</Link>
+            <Link to ="/">Todo-what</Link>
             </div>
            
             </div>
