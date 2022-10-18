@@ -16,9 +16,10 @@ const MainInfo=(props)=>{
     return(
             <div className='MainInfo'>
          <ExerciseInform  onSavedFormData={FormDataHandler}/>
+            
              </div>
 
-
+        
     )
     
           

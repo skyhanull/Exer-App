@@ -7,3 +7,14 @@
     
     
 }
+
+@media (max-width:700px){
+    .SubInfo{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+       background-color:#615959 ;
+       
+    }
+    }
